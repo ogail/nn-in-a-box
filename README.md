@@ -4,6 +4,7 @@
 Neural network in a box is an educational project for MNIST Deep Network training implemented in native C++ from scratch!  Yes, no TensorFlow, no black boxes, everything is exposed!
 
 This repo has a submodule, to successfully clone is, run
+
     $ git clone https://github.com/ogail/nn-in-a-box.git
     $ git submodule update --init --recursive
 
@@ -16,4 +17,4 @@ To build the project and execute the training, run
 
 To run the unit tests using googletest, run
 
-    make check
+    $ make check

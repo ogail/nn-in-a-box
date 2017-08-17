@@ -1,0 +1,4 @@
+[submodule "src/mnist"]
+	path = src/mnist
+	url = https://github.com/wichtounet/mnist.git
+	branch = master

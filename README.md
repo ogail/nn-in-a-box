@@ -5,16 +5,14 @@ Neural network in a box is an educational project for MNIST Deep Network trainin
 
 This repo has a submodule, to successfully clone is, run
 
-    $ git clone https://github.com/ogail/nn-in-a-box.git
+    $ git clone https://github.com/ogail/nn-in-a-box.git && cd nn-in-a-box && git checkout dev
     $ git submodule update --init --recursive
 
 To build the project and execute the training, run
 
-    $ mkdir build && cd build
-    $ cmake .. && make
+    $ mkdir build && cd build && cmake .. && make
     $ ./bin/nn-in-a-box
     
-
 To run the unit tests using googletest, run
 
     $ make check

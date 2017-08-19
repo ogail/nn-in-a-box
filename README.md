@@ -16,3 +16,8 @@ To build the project and execute the training, run
 To run the unit tests using googletest, run
 
     $ make check
+
+
+The design used in this repo is inispired from Andrew Ng's deep learning class
+
+![Design](https://github.com/ogail/nn-in-a-box/blob/dev/artifacts/final.png)

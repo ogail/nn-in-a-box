@@ -1,12 +1,7 @@
 
 # Specify .cpp files
 set(TARGET_NAME nn-in-a-box)
-file(GLOB SRC
-    *.h
-    *.hpp
-    *.cpp
-    mnist/include/*.hpp
-)
+set(SRC basic_math.cpp)
 
 # Build an executable from main.cpp and all specified source files
 add_executable(${TARGET_NAME} main.cpp ${SRC})

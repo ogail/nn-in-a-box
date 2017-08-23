@@ -2,8 +2,8 @@
 cmake_minimum_required(VERSION 2.8)
 
 project(nn-in-a-box)
-set(PROJECT_VERSION 0.0.1)
-set(PROJECT_BRIEF "\"MNIST DNN implementation in native C++\"")
+set(PROJECT_VERSION 0.0.1.0)
+set(PROJECT_BRIEF "\"Neural network implementation from scratch in native C++\"")
 
 
 # Enable/disable testing
@@ -72,8 +72,10 @@ endif()
 #set(LIBRARIES ${LIBRARIES} ${ROOFIT_LIBRARIES})
  
 # Eigen3, a template library for high performance linear algebra
-#find_package(Eigen3 REQUIRED)
-#include_directories(EIGEN3_INCLUDE_DIR)
+include_directories(${CMAKE_SOURCE_DIR}/src/Eigen)
+
+# mnist, is a library for loading mnist dataset in C++
+include_directories(${CMAKE_SOURCE_DIR}/src/mnist/include)
 
 # Basic 3D graphics libraries: OpenGL, glew, glfw
 #find_package(OpenGL REQUIRED)
